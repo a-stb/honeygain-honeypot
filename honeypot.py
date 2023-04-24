@@ -26,5 +26,7 @@ else:
         message = "Couldn\'t open honeypot for {}, did not gather 15MB.{}\nProgress in bytes: {}/15000000".format(user.me()['email'], user_balance, user.get_honeypot_status()["progress_bytes"])
 
 print(message)
-webhook = DiscordWebhook(url=DISCORD, content='{}'.format(message))
-response = webhook.execute()
+
+if DISCORD is not None:
+    webhook = DiscordWebhook(url=DISCORD, content='{}'.format(message))
+    response = webhook.execute()
