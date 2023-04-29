@@ -1,1 +1,1 @@
-0 22 * * * python /honeypot.py >> /var/log/honeypot.log
+0 13 * * * python /honeypot.py >> /var/log/honeypot.log
