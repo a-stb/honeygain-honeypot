@@ -1,6 +1,5 @@
 name: Image Build
 on:
-  # Manueel starte
   workflow_dispatch:
 
 jobs:
@@ -25,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ziggyds/honeygain-daily:latest
+          tags: arnesteinbach/honeygain-claim-honeypot:latest
