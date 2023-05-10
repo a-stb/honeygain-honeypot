@@ -4,12 +4,12 @@ There is a crontab that will run the included python script at 1pm.
 
 ## Environment Variables
 
-|Name           |Value           |Optional |
-|---------------|----------------|---------|
-|JWT_TOKEN      |Your token      |No       |
-|DISCORD_WEBHOOK|Your webhook url|Yes      |
+|Name    |Value        |Optional|
+|--------|-------------|--------|
+|EMAIL   |Your token   |No      |
+|PASSWORD|Your password|No      |
 
 ## Example
-docker run --name honeygain-claim-honeypot -d  -e JWT_TOKEN=<-!your token!-> -e DISCORD_WEBHOOK=<-!channel webhook!-> arnesteinbach/honeygain-claim-honeypot
+docker run --name honeygain-claim-honeypot -d  -e EMAIL=<-!your email!-> -e PASSWORD=<-!your password!-> arnesteinbach/honeygain-claim-honeypot
 
 [https://hub.docker.com/r/arnesteinbach/honeygain-claim-honeypot](https://hub.docker.com/r/arnesteinbach/honeygain-claim-honeypot)
