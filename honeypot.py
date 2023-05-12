@@ -7,7 +7,7 @@ import os
 EMAIL = os.getenv('EMAIL')
 PASSWORD = os.getenv('PASSWORD')
 
-CACHED_TOKEN_PATH = '.jwt-token'
+CACHED_TOKEN_PATH = '/.jwt-token'
 
 def login():
     if os.path.exists(CACHED_TOKEN_PATH):
